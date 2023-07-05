@@ -9,4 +9,5 @@ My eighht script 7-movethatfile moving the file betty for tmp to mt first direct
 My ninth script 8-firstdelete delete file betty from tmp-my first directory
 My tenth script 9-firstdirdeletion deleting my first dir in tmp
 My eleventh script writing 10-back changing the working directory to the previous one
-My thirteen script writing '11-lists' list files even ones with names beginning with a period character 
+My thirteen script writing '11-lists' list files even ones with names beginning with a period character
+My fourteen  script writing that prints the type of the file named iamafile 
