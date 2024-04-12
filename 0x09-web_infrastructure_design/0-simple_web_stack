@@ -1,0 +1,26 @@
+WHAT IS A SERVER?
+-A server is a computer or system that provides functionality to other devices or program known as client throught a network, it serves request, processes data and facilitates communication between clients and servers.
+
+-WHAT ARE THE ROLE OF DOMAIN NAME?
+-Domain name such as (www.footbar.com) helps in identifying/acess websites throught their numerical IP Addresses.
+
+WHAT TYPE OF DNS RECORD  www is in www.footbar.com
+-A Record
+
+What is the role of the web server
+-The web server is to store, process and deliver web pages and other web content to users.
+
+What is the role of the application server
+-Application servers receive incoming requests from clients and process.
+
+What is the role of the database
+-Data base is use for data storage, Manipulaton and data retrival.
+
+What is the server using to communicate with the computer of the user requesting the website
+-It uses the IP Address
+
+ISSUES WITH THE INFRASTRUCTURE
+-Since the infrastructure has only one server, when the server goes down, the website becomes inaccessable, and any hardware failure will lead to down timefor the website.
+To resolve this problem, we can use multiple server.
+
+https://drive.google.com/file/d/19KxyL0Gknw_39e7wr-XI_W9Rvul03grs/view?usp=sharing
