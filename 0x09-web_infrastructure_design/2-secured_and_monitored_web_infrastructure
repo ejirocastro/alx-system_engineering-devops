@@ -1,0 +1,24 @@
+For every additional element, why you are adding it?
+-We added fire-wall to prevent incoming threat by filtering incoming traffic in the network.
+-Adding SSL helps to encrypt traffic between client and web server.
+-We added monitor to help collect data from various component.
+
+What are firewalls for?
+-To help prevent incoming threat by filtering incoming traffic in the network.
+
+Why is the traffic served over HTTPS?
+-It ensures data confidentiality, integrity, and authenticity, enhancing the security of the website and user interactions.
+
+What monitoring is used for?
+-it helps in tracking the health performance of the infrastructure
+
+How the monitoring tool is collecting data?
+-It helps in collecting data by capturing events from server and other component
+
+Explain what to do if you want to monitor your web server QPS?
+-You will configure the monitoring tool to capture related incoming http requests.
+
+Why terminating SSL at the load balancer level is an issue?
+-It will exposes sensitive data to an unauthorized access.
+
+https://imgur.com/a/w1oWHgi

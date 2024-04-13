@@ -1,0 +1,5 @@
+For every additional element, why you are adding it?
+-LOAD BALANCER: We added another load balance to avoid Single point of failure, that is if one load balancer fails
+-We added Split component Improves scalability and performance by distributing workload across multiple servers.
+
+https://imgur.com/a/nbjgQ49
