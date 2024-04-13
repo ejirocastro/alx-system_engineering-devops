@@ -1,0 +1,29 @@
+For every additional element, why you are adding it?
+-We added two new server to the infrastructure for efficient handling, and for situation where one server fails the website can still function.
+-we added a load balancer to help ensure high availability and scalability by distributing traffic evenly across the web servers.
+
+What distribution algorithm your load balancer is configured with and how it works?
+-I used the Round Robin, it distributes incoimng requests from users among servers ensuring that the server receives equal share of traffic over time.
+
+Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both?
+-It is enabbling  Active-Active
+DIFFERENCE BETWEEN ACTIVE-ACTIVE AND ACTIVE-PASSIVE?
+-Active-Active all component are actively serving traffic distribution or process request simultaneously While in Active-Passive only one component is actively serving traffic while the other remains in standby or passive mode, ready to take over if the active component fails.
+
+How a database Primary-Replica (Master-Slave) cluster works?
+-There are two types of node In a Primary-Replica (also known as Master-Slave) database cluster
+1 Primary Node is the main database server responsible for proccessing write option, it is replicated to the Replica Node incase the primary node fails one of the node will become the new primary node to ensure continous operation.
+
+What is the difference between the Primary node and the Replica node in regard to the application?
+-The primary node is the main node responsible for handling read and write operations, While the Relica node is a copy of the primary node.
+
+SPOF
+-There's lack of redundancy in the component such as the absence of backup load balancer, if it fails there will be downtime untill the issue is fixed.
+Security issues (no firewall, no HTTPS)
+-Without firewall the server is vulnerable to various type of attacks.
+No monitoring?
+-Without monitoring will we not be able to track server performance, application health, network traffic and security events.
+
+
+
+https://drive.google.com/file/d/19KxyL0Gknw_39e7wr-XI_W9Rvul03grs/view?usp=sharing
