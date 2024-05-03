@@ -1,3 +1,4 @@
+#!/usr/bin/pup
 # create a file
 package { 'Flask':
   ensure   => '2.1.0',
