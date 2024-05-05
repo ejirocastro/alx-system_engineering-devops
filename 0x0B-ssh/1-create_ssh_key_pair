@@ -2,4 +2,5 @@
 #Bash script that creates an RSA key pair
 "betty"
 
-ssh-keygen -t rsa -b 4096 -f school -p betty
+ssh-keygen -t rsa -b 4096 -f school
+-p betty
