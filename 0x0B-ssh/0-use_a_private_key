@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#connecting server using ussh key
+ssh -i ~/.ssh/school/
+ubuntu@your_server_ip
