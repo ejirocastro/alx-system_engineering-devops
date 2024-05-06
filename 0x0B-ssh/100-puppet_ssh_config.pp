@@ -1,14 +1,19 @@
 #!/usr/bin/env bash
-#puppet script to create ssh
+#puppet script to create ss
+
+file {'/etc/ssh/ssh_config':
+  ensure => 'present'
+}
 
 file_line {'Turn off passwd auth':
-  ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   =>  ' passwordAuthentication no',
+  line   => 'passwordAuthentication no',
+  match  => '^#passwordAuthentication',
+
 }
 
 file_line {'Deiclare identity file':
-  ensure => "present",
   path   => '/etc/ssh/ssh_config',
-  line   => ' identityile ~/.ssh/scool',
+  line   => 'IdentityFile ~/.ssh/scool',
+  match  => '^#IdentityFile',
 }
