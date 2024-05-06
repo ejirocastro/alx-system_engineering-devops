@@ -6,7 +6,7 @@ file line {'Turn off passwd auth':
   line   =>  'passwordAuthentication no',
 }
 
-file_line {'decine identity file',
+file_line {'Declare identity file':
   ensure => "present",
   path   => '/etc/ssh/ssh_config',
   line   => 'identityile ~/.ssh/scool',
