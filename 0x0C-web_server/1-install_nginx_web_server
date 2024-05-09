@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 # Script to configure a new Ubuntu machine with Nginx
 
-# Update and install Nginx
-echo -e "Updating and installing Nginx"
+# Update package repositories and install Nginx
 sudo apt-get update -y -qq && \
 sudo apt-get install nginx -y
-
-ecch -e "\nsetting up minor stuff.\n"
 
 # Start Nginx service
 sudo service nginx start
@@ -19,8 +16,8 @@ sudo chown -R "$USER":"$USER" /var/www/html
 sudo chmod -R 755 /var/www/
 
 # Backup default index file and create new one
-cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.bckp
-echo -e "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
+sudo cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.bckp
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html >/dev/null
 
-# Restart Nginx service
-sudo service nginx restart
+# Restart Nginx service (without using systemctl)
+sudo /etc/init.d/nginx restart
