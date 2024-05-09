@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Script to configure a new Ubuntu machine with Nginx
+
+# Update and install Nginx
+echo "Updating and installing Nginx..."
+sudo apt-get update -y -qq && \
+sudo apt-get install nginx -y
+
+# Start Nginx service
+echo "Starting Nginx service..."
+sudo service nginx start
+
+# Allow Nginx through firewall
+echo "Allowing Nginx through firewall..."
+sudo ufw allow 'Nginx HTTP'
+
+# Set permissions for web directory
+echo "Setting permissions for web directory..."
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www/
+
+# Backup default index file and create new one
+echo "Backing up default index file and creating new one..."
+cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.bckp
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html >/dev/null
+
+# Restart Nginx service
+echo "Restarting Nginx service..."
+sudo service nginx restart
