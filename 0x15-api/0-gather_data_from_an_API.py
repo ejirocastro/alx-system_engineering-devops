@@ -3,8 +3,8 @@
 """
 Fetches and displays information about an employee
 
+API: https://jsonplaceholder.typicode.com/
 """
-import json
 import requests
 import sys
 
